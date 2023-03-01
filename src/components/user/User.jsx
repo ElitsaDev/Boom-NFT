@@ -6,9 +6,9 @@ import { styled } from "@mui/material/styles"
 import VerifiedIcon from '@mui/icons-material/Verified';
 
 export default function User({ 
-    name = "my name",
-    info = "my info",
-    avatar = "yes",
+    name = "",
+    info = "",
+    avatar = "",
     size = 55,
     verified = false,
     
