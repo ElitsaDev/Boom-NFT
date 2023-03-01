@@ -1,0 +1,26 @@
+@use "../../styles/colors";
+
+.user{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    color: colors.$text_primary !important;
+    font-size: 1.5rem;
+    margin: 0px;
+    font-weight: 800 !important;
+}
+
+.info{
+    font-style: bold;
+    color: colors.$secondary_main !important;
+    font-size: 1.2rem;
+    margin: 0px;
+    font-weight: 600 !important;
+}
