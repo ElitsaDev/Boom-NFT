@@ -4,22 +4,19 @@ import { Box, Badge } from "@mui/material";
 
 
 export default function Avatar({
-    verified = +false,
-    avatar = "/images/avatar.png",
-    size = "90px",
-   
+    size = 90,
+    url = "/images/avatar.png",
+    verified = false,
 }) {
-
-
-    
+   
     return (
         <Box className={styles.avatar} style={{ width: size, height: size }}>
-            <img src={avatar}
+            <img src={url}
                 alt=""
                 className={styles.image}
                 style={{ width: "100%", height: "100%" }}
                 
-               {...verified && <Badge
+               {...verified && <Badge className={styles.badge}
                     overlap="circular"
                     anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
                     badgeContent={
