@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React from "react";
 import styles from "./Header.module.scss";
 import Logo from "../logo/Logo";
 
