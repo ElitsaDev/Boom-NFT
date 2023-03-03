@@ -1,0 +1,61 @@
+@use "../../styles/colors.scss";
+
+.card {
+    width: 339px;
+    height: 443px;
+  
+    background-color: colors.$background_paper;
+    border-radius: 15px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    align-items: left;
+}
+
+.media {
+    width: 309px;
+    height: 286px;
+    border-radius: 15px !important;
+    object-fit: cover;
+}
+
+.title{
+    color: colors.$text_primary;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.likes {
+    background-color: #192e2d;
+}
+
+.price, 
+.likes ,
+.icon {
+    color: colors.$secondary_main !important;  
+}
+
+.infoText {
+    margin-top: 21px;
+}
+
+.title{
+    size: 16px;
+}
+
+.price {
+    margin-left: 6px 25px 27px 15px;
+    size: 14px;
+}
+.likes {
+    box-sizing: border-box;
+    border: 2px solid #24F25E;
+    border-radius: 17px;
+    margin-left: 165px;
+}
+

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Avatar.module.scss";
-import { Box, Badge } from "@mui/material";
+import { Box } from "@mui/material";
 
 export default function Avatar({
     size = 90,

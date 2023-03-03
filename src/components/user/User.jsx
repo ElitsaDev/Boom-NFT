@@ -1,9 +1,8 @@
 import React, { useState, useCallback } from "react";
 import styles from "./User.module.scss";
-import { Container, Stack, Avatar, Badge, Box } from "@mui/material";
+import { Box } from "@mui/material";
 
-import { styled } from "@mui/material/styles"
-import VerifiedIcon from '@mui/icons-material/Verified';
+import Avatar from "../avatar/Avatar";
 
 export default function User({ 
     name = "",
