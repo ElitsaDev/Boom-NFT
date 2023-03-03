@@ -16,13 +16,16 @@ export default function Avatar({
                 style={{ width: "100%", height: "100%" }}
             />
             {verified 
-            && <Badge className={styles.badge}
-                    overlap="circular"
-                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}>
-                    <img src="/images/verified.svg" alt="verified" />
-                </Badge>}
+            && <img src="/images/verified.svg" alt="verified" className={styles.badge} />}
         </Box>
     );
 }
 
- //<img src="/images/verified.svg" alt="verified" className={styles.badge} />
+
+ /*
+ <Badge className={styles.badge}
+                    overlap="circular"
+                    anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}>
+                    <img src="/images/verified.svg" alt="verified" />
+                </Badge>
+ */
