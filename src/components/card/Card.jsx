@@ -10,8 +10,7 @@ export default function Card({
         name = "",
         likes = 0,
         mediaUrl = "/images/nft.jpg",
-        user: { ...props
-        },
+        user = {},
         price = "",
         currency = "",
 }) {
@@ -31,10 +30,10 @@ export default function Card({
             <CardContent >
                 <CardHeader className={styles.cardHeader}
                     avatar={<Avatar className={styles.avatar}
-                        url={props.avatar}
-                        size={33}
-                    > {props.verified}
-                    </Avatar>}
+                    url={user.avatar} 
+                    verified={user.verified}
+                    size={33}
+                    />}
                 />
                 <CardMedia className={styles.media}
                     component="img"
