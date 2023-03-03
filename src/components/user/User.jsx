@@ -15,7 +15,7 @@ export default function User({
 }) {
     return (
         <div className={styles.user}>
-            <Avatar {...{verified, avatar, size }}/>
+            <Avatar />
             <Box className={styles.container}>
                 <p className={styles.name}>{name}</p>
                 <p className={styles.info}>{info}</p>
