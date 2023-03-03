@@ -24,11 +24,7 @@ export default function Card({
         space: true,
     });
 
-    let formatedLikes = millify(likes, {
-        precision: 1,
-        decimalSeparator: ".",
-        units: ['K'],
-    })
+    let formatedLikes = millify(likes);
 
     return (
         <CardMui className={styles.card}>
