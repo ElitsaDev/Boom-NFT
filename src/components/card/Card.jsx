@@ -4,6 +4,7 @@ import styles from "./Card.module.scss";
 
 import { Card as CardMui, CardContent, CardHeader, CardMedia, Chip, Icon, Stack } from "@mui/material";
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import CircleIcon from "@mui/icons-material/Circle";
 import millify from "millify";
 import Countdown from "react-countdown";
 
@@ -53,7 +54,10 @@ export default function Card({
                 >
 
                     {(timeLeft > 0) ? ((<>
-                        <Icon variant="circle"></Icon>
+                        <Badge className={styles.badge}>
+                            <CircleIcon className={styles.circle} />
+                            LIVE
+                        </Badge>
                         <Countdown date={Date.now() + timeLeft} renderer={renderer} />
                     </>)
                     ) : ''}

@@ -54,8 +54,19 @@
 }
 .likes {
     box-sizing: border-box;
-    border: 2px solid #24F25E;
+    border: 2px solid colors.$secondary_main;
     border-radius: 17px;
     margin-left: 165px;
 }
 
+.badge {
+    width: 75px;
+    height: 30px;
+    border-radius: 7px;
+    background: colors.$secondary_main;
+}
+
+.circle {
+    size: 11px;
+    background: colors.$background_paper;
+}
