@@ -53,13 +53,13 @@ export default function Card({
                     alt="NFT image"
                 >
 
-                    {(timeLeft > 0) ? ((<>
+                    {(timeLeft > 0) ? ((<div className={styles.liveCardWrapper}>
                         <Badge className={styles.badge}>
                             <CircleIcon className={styles.circle} />
                             LIVE
                         </Badge>
                         <Countdown date={Date.now() + timeLeft} renderer={renderer} />
-                    </>)
+                    </div>)
                     ) : ''}
 
                 </CardMedia>
