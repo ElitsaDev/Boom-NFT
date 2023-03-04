@@ -13,6 +13,7 @@ export default function Card({
         user = {},
         price = "",
         currency = "",
+        
 }) {
 
     let formatedPrice = millify(Number(price), {
