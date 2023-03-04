@@ -21,7 +21,6 @@ export default function Trending({ cards = [] }) {
                             <Select className={styles.inputLabel}
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
-                                value={cards}
                                 label="This week"
                             >
                                 <MenuItem value={4} >This week </MenuItem>
@@ -29,10 +28,10 @@ export default function Trending({ cards = [] }) {
                         </FormControl>
                     </Grid>
                 </Grid>
-                <Grid container columnSpacing={2} spacing={1} className={styles.containerCard} maxWidth="xl">
-                    {cards && cards.map(({ card, id }) => (
-                        <Grid item md={3} key={id} sx={{ display: "flex" }}>
-                            <Card  {...card} />
+                <Grid container spacing={1} className={styles.containerCard} maxWidth="xl">
+                    {cards.map((card, id) => (
+                        <Grid item xs={3} key={id}>
+                            <Card {...card} />
                         </Grid>
                     ))}
                 </Grid>
