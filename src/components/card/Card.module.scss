@@ -3,7 +3,6 @@
 .card {
     width: 339px;
     height: 443px;
-  
     background-color: colors.$background_paper;
     border-radius: 15px !important;
     display: flex;
@@ -15,10 +14,11 @@
 }
 
 .media {
-    width: 286px;
-    height: 309px;
+    width: 309px;
+    height: 286px;
     border-radius: 15px !important;
-    object-fit: cover;
+    object-fit: scale-down;
+
 }
 
 .title{
