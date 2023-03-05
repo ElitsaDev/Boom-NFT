@@ -1,0 +1,41 @@
+@use "../../styles/colors.scss";
+
+.wrapper {
+    background-color: colors.$primary_main;
+    height: 639px;
+}
+
+.container {
+    display: flex !important; 
+    justify-content: center;
+    align-items: center;
+    padding: 182px 0px 166px 0px; 
+}
+
+.menuItemButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 38px;
+    gap: 10px;
+    position: absolute;
+    width: 195px;
+    height: 59px;
+    background-color: colors.$text_primary;
+    color: colors.$primary_main;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.cardHeader {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: colors.$text_primary;
+}
+
+.description {
+    font-size: 16px;
+    color: colors.$text_secondary;
+}
