@@ -12,10 +12,17 @@
   padding: 18px 0px;
 }
 
+.typography{
+    font-size: 14px;
+    color:rgba(225,225,252,0.5);
+    position: absolute;
+}
+
 .menuItemButton {
-    color: colors.$text_primary !important;
-    font-size: 0.875rem !important;
+    color: colors.$text_hint !important;
+    font-size: 14px !important;
+    line-height: 17px;
+    font-style: normal;
     text-transform: none !important;
     align-self: center;
 }
-

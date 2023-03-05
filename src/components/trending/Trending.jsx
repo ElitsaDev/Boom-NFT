@@ -5,14 +5,14 @@ import styles from "./Trending.module.scss";
 import { Container, Grid, Typography, Select, FormControl, InputLabel, MenuItem } from "@mui/material";
 
 export default function Trending({ cards = [] }) {
-/*
+
     const [ data , setData] = useState({ cards });
     const url = 'http://localhost:3000/cards.json'
     const fetchData = () => fetch(url).then(response => response.json()).then(data => setData(Array.of(data)));
     useEffect(() => {
         fetchData()
-    }, {cards});
-*/
+    }, [cards]);
+
 
     return (
         <div className={styles.wrapper}>
