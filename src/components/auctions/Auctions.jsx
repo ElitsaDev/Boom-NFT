@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "../card/Card";
-import styles from "./Trending.module.scss";
+import styles from "./Auctions.module.scss";
 
 import { Container, Grid, Typography, Select, FormControl, InputLabel, MenuItem } from "@mui/material";
 
