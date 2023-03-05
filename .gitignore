@@ -16,6 +16,4 @@ yarn-error.log*
 
 # Next.js
 /.next
-src/components/auctions/Auctions.jsx
-src/components/card/Card.jsx
-src/components/auctions/Auctions.module.scss
+

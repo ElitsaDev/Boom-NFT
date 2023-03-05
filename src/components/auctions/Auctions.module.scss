@@ -1,0 +1,50 @@
+@use "../../styles/colors";
+
+.wrapper {
+  //padding-top: 80px;
+  background-color: colors.$background_default;
+}
+
+.container {
+  background-color: colors.$background_default;
+  color: colors.$text_primary !important;
+  width: 1420px;
+  height: 545px;
+}
+
+.containerCard {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: colors.$background_default;
+  //width: 1420px;
+}
+
+.cardHeader {
+  font-size: 48px;
+  color: colors.$text_primary;
+  margin: 77px 0px 46px;
+  display: inline-flex;
+}
+
+.cardSelect {
+  display: inline-flex;
+  position:relative;
+ // align-self: end;
+ // justify-self: end;
+  width: 220px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 14px;
+  margin-top: 98px ;
+  margin-bottom: 27px;
+  margin-left: 220px;
+}
+
+.inputLabel {
+  color: colors.$text_primary !important;
+  font-size: 14px !important;
+}
+
+
+
