@@ -1,41 +1,43 @@
 @use "../../styles/colors.scss";
 
 .wrapper {
-    background-color: colors.$primary_main;
-    height: 639px;
+    background-color: colors.$background_default;
+    position: absolute;
+    width: 100%;
+    height: 705px;
+    left: 0px;
 }
 
 .container {
-    display: flex !important; 
-    justify-content: center;
-    align-items: center;
-    padding: 182px 0px 166px 0px; 
+    background-color: colors.$primary_main;
+    width: 100%;
+    height: 639px;
 }
 
-.menuItemButton {
+.cardContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 20px 38px;
-    gap: 10px;
-    position: absolute;
-    width: 195px;
-    height: 59px;
-    background-color: colors.$text_primary;
-    color: colors.$primary_main;
-    font-size: 16px;
-    text-transform: uppercase;
-    border-radius: 30px;
+    background-color: colors.$primary_main;
+    height: 639px;
+    padding: 182px 0px 166px 0px;
 }
 
-.cardHeader {
-    font-size: 60px;
+.title {
+    font-size: 4rem;
     text-transform: uppercase;
+    left: 264px;
+    margin: 0;
     color: colors.$text_primary;
 }
 
 .description {
-    font-size: 16px;
     color: colors.$text_secondary;
+    font-size: 1rem;
+    height: 87px;
+    margin: 20px 0 50px 0;
+}
+
+.menuItemButton {
+    background-color: colors.$text_primary !important;
+    color: colors.$primary_main !important;
 }

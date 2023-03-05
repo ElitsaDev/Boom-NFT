@@ -7,12 +7,13 @@ import Trending from "../src/components/trending/Trending";
 import Footer from "../src/components/footer/Footer";
 import Auctions from "../src/components/auctions/Auctions";
 import How from "../src/components/how/How";
+import Step from "../src/components/how/step/Step";
 
 export default function Index() {
   return (<>
   <Header />
     <Trending />
-    <How />
+    < How />
     <Auctions />
   <Footer />
   </>)

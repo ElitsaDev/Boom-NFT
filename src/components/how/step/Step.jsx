@@ -3,23 +3,24 @@ import styles from "./Step.module.scss";
 import { Container, Grid, Typography } from "@mui/material";
 
 export default function Step({
-        number,
-        title,
-        description        
+    number = 1,
+    title = "Step title",
+    description = "A crypto wallet, such as MetaMask, stores your ETH and processes transactions on the Ethereum blockchain."
 }) {
     return (
         <div className={styles.wrapper}>
-            <Container className={styles.container} >
-                <Grid container maxWidth="xl" justify={'space-between'} alignItems={"center"} >
-                    <Grid item md={6} sx={{ display: "flex" }} className={styles.numberWrraper} >
-                        <Typography className={styles.number} >{number}</Typography>
-                    </Grid>
-                    <Grid item md={6} sx={{ display: "flex" }} className={styles.textWrraper} >
-                        <h1>{title}</h1>
-                        <p>{description}</p>
-                    </Grid>
+            <Grid container >
+                <Grid item xs={4} className={styles.container}>
+                    <h1 className={styles.number}>
+                        {number}
+                    </h1>
                 </Grid>
-            </Container>
+                <Grid item xs={8} className={styles.infoWrapper}>
+                    <h1 className={styles.title}>{title}</h1>
+                    <p className={styles.description}>{description}</p>
+                </Grid>
+            </Grid>
         </div>
     );
 }
+
