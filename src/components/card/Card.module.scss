@@ -18,7 +18,6 @@
     height: 286px;
     border-radius: 15px !important;
     object-fit: scale-down;
-
 }
 
 .title{
@@ -62,17 +61,32 @@
 
 .liveCardWrapper {
     width: 273px;
-    position: absolute;
+    position: relative;
 }
 
 .badge {
     width: 75px;
     height: 30px;
     border-radius: 7px !important;
-    background: colors.$secondary_main;
+    background-color: colors.$secondary_main;
+    position: absolute;
+    left: 10px; 
+    bottom: 245px;
 }
 
 .circle {
     width: 11px !important;
-    background: colors.$background_paper;
+    margin-right: 11px !important;
+    margin-left: 4px;
+}
+
+.countdown {
+    position: absolute !important;
+    background-color: colors.$secondary_main !important;
+    text-align: center !important;
+    font-size: 18px;
+    color: colors.$background_paper !important;
+    bottom: 42px;
+    border-radius: 0px 0px 15px 15px !important;
+    width: 100%;
 }

@@ -1,0 +1,56 @@
+{
+    "cards":[
+       {
+          "name":"Ivy",
+          "user":{
+             "avatar":{
+                "url":"images/avatar.png"
+             },
+             "verified":true
+          },
+          "mediaUrl":"images/nft.jpg",
+          "price":1,
+          "currency":"ETH",
+          "timeLeft": 1500000
+       },
+       {
+          "name":"Judie",
+          "user":{
+             "avatar":{
+                "url":"images/avatar.png"
+             },
+             "verified":true
+          },
+          "mediaUrl":"images/nft.jpg",
+          "price":2.3,
+          "currency":"ETH", 
+          "timeLeft": 1500000
+       },
+       {
+          "name":"Juniper",
+          "user":{
+             "avatar":{
+                "url":"images/avatar.png"
+             },
+             "verified":true
+          },
+          "mediaUrl":"images/nft.jpg",
+          "price":5,
+          "currency":"ETH",
+          "timeLeft": 1500000
+       },
+       {
+          "name":"Maple",
+          "user":{
+             "avatar":{
+                "url":"images/avatar.png"
+             },
+             "verified":true
+          },
+          "mediaUrl":"images/nft.jpg",
+          "price":10,
+          "currency":"ETH",
+          "timeLeft": 1500000
+       }
+    ]
+ }

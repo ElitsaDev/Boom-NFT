@@ -1,10 +1,18 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Card from "../card/Card";
 import styles from "./Trending.module.scss";
 
 import { Container, Grid, Typography, Select, FormControl, InputLabel, MenuItem } from "@mui/material";
 
 export default function Trending({ cards = [] }) {
+/*
+    const [ data , setData] = useState({ cards });
+    const url = 'http://localhost:3000/cards.json'
+    const fetchData = () => fetch(url).then(response => response.json()).then(data => setData(Array.of(data)));
+    useEffect(() => {
+        fetchData()
+    }, {cards});
+*/
 
     return (
         <div className={styles.wrapper}>
@@ -17,7 +25,7 @@ export default function Trending({ cards = [] }) {
                     </Grid>
                     <Grid item xs={3}  >
                         <FormControl className={styles.cardSelect}  >
-                            <InputLabel id="demo-simple-select-label" >This week</InputLabel>
+                            <InputLabel id="demo-simple-select-label">This week</InputLabel>
                             <Select className={styles.inputLabel}
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
@@ -31,7 +39,7 @@ export default function Trending({ cards = [] }) {
                 <Grid container spacing={1} className={styles.containerCard} maxWidth="xl">
                     {cards.map((card, id) => (
                         <Grid item xs={3} key={id}>
-                            <Card  {...card} />
+                            <Card  { ...card } />
                         </Grid>
                     ))}
                 </Grid>
@@ -40,56 +48,3 @@ export default function Trending({ cards = [] }) {
     );
 }
 
-/*  let cardsDB  = [
-       {
-          name:"Ivy",
-          user:{
-             avatar:{
-                url:"images/avatar.png"
-             },
-             verified:true
-          },
-          mediaUrl:"images/nft.jpg",
-          price:1,
-          currency:"ETH",
-       },
-       {
-          name:"Judie",
-          user:{
-             avatar:{
-                url:"images/avatar.png"
-             },
-             verified:true
-          },
-        mediaUrl:"images/nft.jpg",
-          price:2.3,
-          currency:"ETH"
-       },
-       {
-          name:"Juniper",
-          user:{
-             avatar:{
-                "url":"images/avatar.png"
-             },
-             verified:true
-          },
-          mediaUrl:"images/nft.jpg",
-          price:5,
-          currency:"ETH"
-       },
-       {
-          name:"Maple",
-          user:{
-             avatar:{
-                url:"images/avatar.png"
-             },
-             verified:true
-          },
-          mediaUrl:"images/nft.jpg",
-          price:10,
-          currency:"ETH"
-       }
-    ]
-    cards = Array.from(cardsDB) ;
-    console.log(cards);
-*/
