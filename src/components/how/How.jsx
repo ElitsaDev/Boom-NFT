@@ -21,8 +21,8 @@ export default function How({
                         <Button className={styles.menuItemButton} variant="contained" href={link}>Learn more</Button>
                     </Grid>
                     <Grid item xs={4}>
-                         {items.map((item, id) => (
-                               <Step key={id} number={ id + 1} {...item} />
+                         {items.map((item, index) => (
+                               <Step key={index} number={ index + 1} {...item} />
                         ))}  
                     </Grid> 
                 </Grid>
