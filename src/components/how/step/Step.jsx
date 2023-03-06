@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Step.module.scss";
-import { Container, Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 
 export default function Step({
-    number = 1,
-    title = "Step title",
-    description = "A crypto wallet, such as MetaMask, stores your ETH and processes transactions on the Ethereum blockchain."
+    number,
+    title,
+    description
 }) {
     return (
         <div className={styles.wrapper}>
