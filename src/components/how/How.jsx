@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./How.module.scss";
 import { Grid, Button, Container } from "@mui/material";
-import Step from "./step/Step";
+import Step from "./Step";
 
 export default function How({
     description,
