@@ -22,8 +22,8 @@ export default function How({
                     </Grid>
                     <Grid item xs={4}>
                          {items.map((item, id) => (
-                              // <Step key={index} number={ index+1} {...item} />
-                                 <Step key={id}  props = { {number: id + 1, ...item }} />
+                               <Step key={index} number={ index + 1} {...item} />
+                               //  <Step key={id}  props = { {number: id + 1, ...item }} />
                            
                         ))}  
                     </Grid> 
