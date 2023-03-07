@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./How.module.scss";
+import styles from "./How.module.scss"
 import { Grid, Button, Container } from "@mui/material";
 import Step from "./Step";
 

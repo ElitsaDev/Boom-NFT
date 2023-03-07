@@ -7,15 +7,17 @@ import Trending from "../src/components/trending/Trending";
 import Footer from "../src/components/footer/Footer";
 import Auctions from "../src/components/auctions/Auctions";
 import How from "../src/components/how/How";
+import Featured from "../src/components/featured/Featured";
 
 
 export default function Index() {
   return (<>
-  <Header />
+    <Header />
+    <Featured />
     <Trending />
-    < How />
+    <How />
     <Auctions />
-  <Footer />
+    <Footer />
   </>)
-  
+
 }
