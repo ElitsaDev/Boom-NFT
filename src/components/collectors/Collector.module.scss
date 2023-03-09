@@ -1,0 +1,31 @@
+@use "../../styles/colors";
+
+.container {
+    width: 340px;
+    height: 76px;
+}
+
+.light {
+    background-color: rgba(colors.$primary_main, 0.3);
+    width: 79px;
+    height: 76px;
+}
+
+.dark {
+    background-color: rgba(colors.$primary_main, 0.2);
+    width: 79px;
+    height: 76px;
+}
+
+.number {
+    color: colors.$text_primary;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.infoUser{
+    opacity: 0.9;
+}
