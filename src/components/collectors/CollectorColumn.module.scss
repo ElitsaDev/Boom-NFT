@@ -1,0 +1,11 @@
+@use "../../styles/colors";
+
+.wrapper {
+    background-color: colors.$background_default;
+  }
+  
+  .container {
+    width: 379px;
+    height: 228px;
+    border-radius: 15px;
+  }

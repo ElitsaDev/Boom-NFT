@@ -8,6 +8,7 @@ import Footer from "../src/components/footer/Footer";
 import Auctions from "../src/components/auctions/Auctions";
 import How from "../src/components/how/How";
 import Featured from "../src/components/featured/Featured";
+import CollectorColumn from "../src/components/collectors/CollectorColumn";
 
 
 export default function Index() {
@@ -15,6 +16,7 @@ export default function Index() {
     <Header />
     <Featured />
     <Trending />
+    <CollectorColumn />
     <How />
     <Auctions />
     <Footer />
