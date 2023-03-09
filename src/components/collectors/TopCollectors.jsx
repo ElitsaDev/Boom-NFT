@@ -5,7 +5,7 @@ import { Container, Grid, Typography, Select, FormControl, InputLabel, MenuItem 
 import chunk from "lodash.chunk";
 
 export default function TopCollectors({ collectors = [] }) {
-   collectors = coll;
+   
     let chunckedCollectors = chunk(collectors, 3);
     
     return (
@@ -42,7 +42,7 @@ export default function TopCollectors({ collectors = [] }) {
     );
 }
 
-
+/*
 let coll = {
     "collectors": [
         {
@@ -59,3 +59,5 @@ let coll = {
         }
     ]
 }
+*/
+
