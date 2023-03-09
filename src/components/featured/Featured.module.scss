@@ -1,1 +1,18 @@
 @use "../../styles/colors.scss";
+
+.wrapper {
+    //padding-top: 80px;
+    background-color: colors.$background_default;
+}
+
+.container {
+    margin-top: 78px;
+    background-color: colors.$background_default;
+    width: 1420px;
+    height: 482px;
+}
+
+.image {
+    border-radius: 15px;
+    height: 226px;
+}
