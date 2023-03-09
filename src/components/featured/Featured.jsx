@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import styles from "./Featured.module.scss";
 import { Container, ImageList, ImageListItem } from "@mui/material";
 
-export default function Featured(items = []) {
+export default function Featured({items = []}) {
   const router = useRouter();
   const clickHandler = () => {
     router.push(item.image);
