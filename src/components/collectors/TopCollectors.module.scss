@@ -1,0 +1,51 @@
+@use "../../styles/colors";
+
+.wrapper {
+    //padding-top: 80px;
+    background-color: #0f0d1f;
+    border: 2px;
+    border-color: colors.$background_paper;
+  }
+  
+  .container {
+    background-color: #0f0d1f;
+    color: colors.$text_primary !important;
+    width: 1420px;
+    height: 510px;
+  }
+  
+  .containerCard {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0d1f;
+    //width: 1420px;
+  }
+  
+  .cardHeader {
+    font-size: 48px;
+    color: colors.$text_primary;
+    margin: 77px 0px 46px;
+    display: inline-flex;
+  }
+  
+  .cardSelect {
+    display: inline-flex;
+    position:relative;
+   // align-self: end;
+   // justify-self: end;
+    width: 220px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 98px ;
+    margin-bottom: 27px;
+    margin-left: 220px;
+    background-color: rgba(colors.$primary_main, 0.2) !important;
+  }
+  
+  .inputLabel {
+    color: colors.$text_secondary !important;
+    font-size: 14px !important;
+  }
+  
