@@ -5,15 +5,15 @@ import styles from "./Trending.module.scss";
 import { Container, Grid, Typography, Select, FormControl, InputLabel, MenuItem } from "@mui/material";
 
 export default function Trending({ cards = [] }) {
-
-    const [ data , setData] = useState({ cards });
-    const url = 'http://localhost:3000/cards.json'
-    const fetchData = () => fetch(url).then(response => response.json()).then(data => setData(Array.of(data)));
-    useEffect(() => {
-        fetchData()
-    }, [cards]);
-
-
+    /*
+        const [ data , setData] = useState({ cards });
+        const url = 'http://localhost:3000/cards.json'
+        const fetchData = () => fetch(url).then(response => response.json()).then(data => setData(Array.of(data)));
+        useEffect(() => {
+            fetchData()
+        }, [cards]);
+    */
+    console.log(cards)
     return (
         <div className={styles.wrapper}>
             <Container className={styles.container} >
@@ -39,7 +39,7 @@ export default function Trending({ cards = [] }) {
                 <Grid container spacing={1} className={styles.containerCard} maxWidth="xl">
                     {cards.map((card, id) => (
                         <Grid item xs={3} key={id}>
-                            <Card  { ...card } />
+                            <Card  {...card} /> 
                         </Grid>
                     ))}
                 </Grid>

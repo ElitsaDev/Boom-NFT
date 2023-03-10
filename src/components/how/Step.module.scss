@@ -20,7 +20,7 @@
 .number {
   border-radius: 20px;
   color: colors.$text_primary;
-  background-color: rgba(colors.$primary_main, 10%);
+  //background-color: rgba(colors.$primary_main, 10%);
   padding: 0 70px;
   font-size: 72px;
   font-weight: 600;
@@ -36,6 +36,7 @@
 
 .title {
   text-align: center;
+  color: colors.$text_primary;
 }
 
 .description {

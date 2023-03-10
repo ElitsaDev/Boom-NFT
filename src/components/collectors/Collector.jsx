@@ -11,13 +11,13 @@ export default function Collector({
     id,
     type,
 }) {
-
+    //console.log(name , nftsCount, avatar)
     return (
         <div className={styles.container}>
             <Grid container className={type == "lighter" ? styles.light : styles.dark}>
                 <Grid item xs={3}>
                     <h1 className={styles.number}>
-                        {id + 1}
+                        {id}
                     </h1>
                 </Grid>
                 <Grid item xs={9} className={styles.infoUser} >

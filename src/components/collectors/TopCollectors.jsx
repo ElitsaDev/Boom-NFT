@@ -5,7 +5,6 @@ import { Container, Grid, Typography, Select, FormControl, InputLabel, MenuItem 
 import chunk from "lodash.chunk";
 
 export default function TopCollectors({ collectors = [] }) {
-   
     let chunckedCollectors = chunk(collectors, 3);
     
     return (
@@ -31,9 +30,10 @@ export default function TopCollectors({ collectors = [] }) {
                     </Grid>
                 </Grid>
                 <Grid container spacing={1} className={styles.containerCard} maxWidth="xl">
-                    {chunckedCollectors.map((collector, id) => (
-                        <Grid item xs={3} key={id}>
-                            <CollectorColumn  {...collector} />
+                    {chunckedCollectors.map((collectors, index) => (
+                        
+                        <Grid item xs={3} key={index}>
+                            <CollectorColumn  items={collectors} />
                         </Grid>
                     ))}
                 </Grid>

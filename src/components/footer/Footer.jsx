@@ -14,11 +14,9 @@ export default function Footer() {
                         <Logo type='muted' />
                     </Grid>
                     <Grid item md={4} sx={{ display: "flex", alignItems: "center" }}>
-                        <p>
-                            <Typography className={styles.typography}>
-                                Bum All Rights Reserved 2021
-                            </Typography>
-                        </p>
+                        <Typography className={styles.typography}>
+                            Bum All Rights Reserved 2021
+                        </Typography>
                     </Grid>
                     <Grid item md={4} sx={{ display: "flex", justifyContent: "flex-end", position: "left" }} >
                         <Button className={styles.menuItemButton} variant={"text"}>Privacy Policy</Button>
