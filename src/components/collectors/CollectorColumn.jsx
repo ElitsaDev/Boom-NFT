@@ -13,7 +13,7 @@ export default function CollectorColumn({ items = [
         }
     ]
  }) {
-
+    
     return (
         <div className={styles.wrapper}>
             <Container className={styles.container}>
@@ -23,8 +23,9 @@ export default function CollectorColumn({ items = [
                             ? 'lighter'
                             : ''
                         } 
+                        
                         {...item}
-                        key={index}  
+                         key={item.id}
                     />
                 ))}
             </Container>
