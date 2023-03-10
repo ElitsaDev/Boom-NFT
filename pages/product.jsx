@@ -11,7 +11,7 @@ export default function Product() {
 
     return (
         <>
-            <ProductImage URL={productImage}/>
+            <ProductImage url={productImage}/>
         </>
     );
 }
