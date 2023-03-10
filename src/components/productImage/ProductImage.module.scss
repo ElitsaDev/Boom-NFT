@@ -1,0 +1,13 @@
+@use "../../styles/colors";
+
+.product-image {
+    width: 699px;
+    height: 798px;
+    border-radius: 15px;
+    margin-top: 78px;
+}
+
+.image {
+    width: 100%;
+    image-orientation: from-image;   
+}
