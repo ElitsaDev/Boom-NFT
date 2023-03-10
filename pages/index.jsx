@@ -37,10 +37,10 @@ export default function Index() {
     <>
       <Header />
       <Featured items={featuredCards} />
-     {/* <Trending cards={trendingCards}/>
+      <Trending cards={trendingCards}/>
       <TopCollectors collectors={topUsersCollectors}/>
       <How items={trendingCards}/>
-      <Auctions cards={nfts}/> */}
+      <Auctions cards={nfts}/> 
       <Footer /> 
     </>)
 
