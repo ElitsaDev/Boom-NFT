@@ -3,7 +3,7 @@ import styles from "./ProductImage.module.scss";
 
 export default function ProductImage({url}){
     <div className={classNames(styles["product-image"])}>
-        <img src={url} 
+        <img src={`./images/${url}`} 
             alt="Product image"
             className={styles.image} />
     </div>
