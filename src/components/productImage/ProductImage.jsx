@@ -3,7 +3,7 @@ import styles from "./ProductImage.module.scss";
 import classNames from 'classnames';
 
 export default function ProductImage({
-    url = "/images/nft.jpg",
+    url = "images/nft.jpg",
 }){
    return (
     <div className={classNames(styles["product-image"])}>
