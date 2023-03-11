@@ -19,3 +19,23 @@
     align-self: center;
 }
 
+@use "../../styles/colors.scss";
+
+.wrapper{
+  background-color: colors.$background_paper;
+  height: 98px;
+}
+
+.container {
+  display: flex !important; 
+  justify-content: center;
+  background-color: colors.$background_paper;
+  padding: 18px 0px;
+}
+
+.menuItemButton {
+    color: colors.$text_primary !important;
+    font-size: 0.875rem !important;
+    text-transform: none !important;
+    align-self: center;
+}
