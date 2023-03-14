@@ -4,7 +4,7 @@ import styles from "./ProductInfoTitle.module.scss";
 
 export default function ProductInfoTitle({text}){
     return (
-        <div className="product-info-title">
+        <div className={classNames(styles["product-info-title"])} >
             <Typography className={classNames(styles.title)}>
                 {text}
             </Typography>
