@@ -1,5 +1,5 @@
 import { Chip } from "@mui/material";
-import React, { Fragment } from "react";
+import React from "react";
 import styles from "./ProductInfoStatus.module.scss";
 import classNames from 'classnames';
 import CircleIcon from '@mui/icons-material/Circle';

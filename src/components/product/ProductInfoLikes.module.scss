@@ -1,0 +1,25 @@
+@use "../../styles/colors";
+
+.product-info-likes {
+    width: 64px;
+    height: 33px;
+    border-radius: 7px;
+    border: 2px solid colors.$secondary_main;
+    background-color: rgba(36, 242, 94, 0.1);
+}
+
+.likes {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: colors.$secondary_main !important;
+}
+
+.icon {
+    color: colors.$secondary_main !important;
+    width: 13px !important;
+    height: 11px !important;
+    margin-left: 11px;
+}
