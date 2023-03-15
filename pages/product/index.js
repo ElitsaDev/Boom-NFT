@@ -6,6 +6,7 @@ import Link from "../../src/components/link/Link";
 import ProductImage from "../../src/components/product/ProductImage";
 import ProductInfoTitle from "../../src/components/product/ProductInfoTitle";
 import ProductInfoPrice from "../../src/components/product/ProductInfoPrice";
+import ProductInfoStatus from "../../src/components/product/ProductInfoStatus";
 
 export default function Product() {
   return (
@@ -13,6 +14,7 @@ export default function Product() {
         <ProductImage />
         <ProductInfoTitle />
         <ProductInfoPrice />
+        <ProductInfoStatus />
     </Container>
   );
 }
