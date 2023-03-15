@@ -11,7 +11,6 @@ import dataTrending from "../data/trending.json";
 import dataUsers from "../data/users.json";
 import dataNfts from "../data/nfts.json";
 import { useState, useEffect } from "react";
-import ProductImage from "../src/components/productImage/ProductImage";
 
 export default function Index() {
 
@@ -44,6 +43,5 @@ export default function Index() {
       <Auctions cards={nfts}/> 
       <Footer /> 
     </>)
-
 }
 
