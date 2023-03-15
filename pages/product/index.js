@@ -8,6 +8,7 @@ import ProductInfoTitle from "../../src/components/product/ProductInfoTitle";
 import ProductInfoPrice from "../../src/components/product/ProductInfoPrice";
 import ProductInfoStatus from "../../src/components/product/ProductInfoStatus";
 import ProductInfoLikes from "../../src/components/product/ProductInfoLikes";
+import ProductInfoCreator from "../../src/components/product/ProductInfoCreator";
 
 export default function Product() {
   return (
@@ -17,6 +18,7 @@ export default function Product() {
         <ProductInfoPrice />
         <ProductInfoStatus />
         <ProductInfoLikes />
+        <ProductInfoCreator />
     </Container>
   );
 }

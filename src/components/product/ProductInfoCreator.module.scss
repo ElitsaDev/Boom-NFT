@@ -1,0 +1,27 @@
+@use "../../styles/colors";
+
+.product-info-creator {
+    width: 340px;
+    height: 118px;
+    border-radius: 15px;
+    background-color: colors.$background_paper;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    margin-left: 27px;
+    color: colors.$text_secondary !important;
+    background-color: rgba(colors.$primary_main, 0.1);
+    border-radius: 15px 15px 0px 0px;
+}
+
+.user-container {
+    color: colors.$background_paper;
+    height: 81px !important;
+    margin-left: 27px;
+}
+
