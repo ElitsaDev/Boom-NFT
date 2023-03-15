@@ -14,6 +14,7 @@ export default function ProductInfoLikes({
     return (
         <div className={classNames(styles["product-info-likes"])} >
             <Chip className={classNames(styles.likes)}
+                variant="outlined"
                 icon={<FavoriteIcon className={classNames(styles.icon)} />}
                 label={formatedLikes}
             />
